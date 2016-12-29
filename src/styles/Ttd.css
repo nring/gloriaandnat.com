@@ -1,0 +1,87 @@
+
+.ttd{
+  margin:0;
+  padding:0;
+}
+.ttd li{
+  margin:0;
+  padding:0;
+  list-style:none;
+}
+
+.ttd h3{
+  font-size:2.5rem;
+  margin-bottom:1rem;
+}
+.ttd a{
+  color:red;
+  text-shadow:0px 0px 2px black;
+}
+
+.ttd--taza:before{
+  background-image:url(http://www.ediblevineyard.com/images/made/images/uploads/eV6_statefare_elizabethcecil_01_650_434_90.jpg);
+}
+.ttd--bantam:before{
+  background-image:url(http://archive.boston.com/lifestyle/food/blogs/99bottles/Bantam-Group-Bottles.jpg);
+}
+.ttd--lamplighter:before{
+  background-image:url(https://pbs.twimg.com/media/Cw_rGTzWgAEPMnz.jpg);
+}
+.ttd--fenway:before{
+  background-image:url(http://www.ballparksofbaseball.com/wp-content/uploads/2016/03/fenway_topv3.jpg);
+}
+
+.ttd{
+  display:flex;
+}
+.ttd li{
+  flex-basis: 33%;
+}
+
+.ttd li {
+  background-color:#ccc;
+  color:#fff;
+  text-align:center;
+  position:relative;
+  overflow:hidden;
+  text-shadow:1px 1px 2px black;
+}
+.ttd li:before{
+  background-size:cover;
+  /*background-color:rgba(100,100, 100,1);*/
+  background-blend-mode:multiply;
+  width:100%;
+  height:100%;
+  display:block;
+  content:'';
+  position:absolute;
+  top:0;
+  left:0;
+  transition:all .3s ease-in-out;
+}
+.ttd li:hover:before{
+  filter: grayscale(100%) contrast(30%);
+}
+.ttd__overlay{
+  transform:translateY(-100%);
+  transition: all .3s ease-in-out;
+  padding:1.2rem 1rem;
+  opacity:0;
+}
+.ttd li:hover .ttd__overlay{
+  transform:translateY(0);
+  opacity:1;
+}
+
+@supports (display: grid) {
+  .ttd {
+    display:grid;
+    grid-template-columns:.333333333fr .333333333fr .333333333fr;
+    grid-template-rows: auto;
+    grid-gap:1rem;
+  }
+  .ttd li{
+    width:auto;
+    float:none;
+  }
+}

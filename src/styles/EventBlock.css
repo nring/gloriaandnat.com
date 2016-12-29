@@ -1,0 +1,63 @@
+.eb{
+  max-width:80em;
+  margin:0 auto;
+}
+.EventBlock{
+  display:flex;
+  width:33%;
+  flex-direction:column;
+  float:left;
+  padding:2%;
+}
+.EventBlock__image{
+  width:100%;
+  height:200px;
+  background-size:cover;
+  margin-bottom:1em;
+}
+.EventBlock__content{
+  display:flex;
+  padding:0 5%;
+  flex-direction:column;
+  align-self:center;
+  width:60%;
+  padding:0;
+  width:auto;
+  align-self:left;
+}
+.EventBlock__content h3{
+  font-size:2.5rem;
+  margin-bottom:0;
+}
+.EventBlock__date{
+  font-size:1.1em;
+  margin-bottom:1em;
+  font-weight:700;
+}
+
+
+.meeting{
+  display:flex;
+  position:relative;
+  min-height:80vh;
+}
+.meeting__content{
+  width:50%;
+  align-self:center;
+  padding:0 5%;
+}
+.meeting p{
+  margin:0;
+  line-height:2rem;
+}
+.meeting__pic{
+  width:50%;
+  background:url(../img/seattle-cropped.jpg) no-repeat 0 50%;
+  background-size:100% auto;
+  padding-top:2rem;
+}
+.meeting__content h2{
+  color:#2f5d41;
+  text-align:center;
+  font-size:4rem;
+}

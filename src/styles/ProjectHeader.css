@@ -1,0 +1,33 @@
+.header{
+  background:#fff;
+  text-align:center;
+  border-bottom:1px solid #ccc;
+}
+.nav .logo{
+  width:75px;
+  height:75px;
+  padding:0;
+}
+.nav a{
+  font-family: 'Amatic SC', cursive;
+  font-size:1.5rem;
+  margin:0 .5em;
+  color:#111;
+  padding:1em 0;
+  display:inline-block;
+  vertical-align: middle;
+  text-decoration: none;
+}
+.nav .active{
+  text-decoration:underline;
+}
+
+@media screen and (min-width: 40rem) {
+  .nav .logo{
+    width:100px;
+    height:100px;
+  }
+  .nav a{
+    font-size:2rem;
+  }
+}
