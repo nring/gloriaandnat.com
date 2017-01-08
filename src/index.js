@@ -6,6 +6,7 @@ import Home from './components/Home';
 import Details from './components/Details';
 import Photos from './components/Photos';
 import Rsvp from './components/Rsvp';
+import NoPassword from './components/NoPassword';
 import './styles/index.css';
 
 ReactDOM.render(
@@ -15,6 +16,7 @@ ReactDOM.render(
       <Route path="details" component={Details} />
       <Route path="photos" component={Photos} />
       <Route path="rsvp" component={Rsvp} />
+      <Route path="noPassword" component={NoPassword} />
     </Route>
   </Router>,
   document.getElementById('root')
