@@ -16,8 +16,8 @@ ReactDOM.render(
       <Route path="details" component={Details} />
       <Route path="photos" component={Photos} />
       <Route path="rsvp" component={Rsvp} />
-      <Route path="noPassword" component={NoPassword} />
     </Route>
+    <Route path="noPassword" component={NoPassword} />
   </Router>,
   document.getElementById('root')
 );
