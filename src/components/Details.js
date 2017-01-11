@@ -105,18 +105,7 @@ class Details extends Component {
             </Ttd>
             <Ttd>
               <div className="ttd__overlay">
-                <h3>Fenway Park</h3>
-                <p>4 Yawkey Way<br />
-                Boston, MA 02215</p>
-                <p>Take a tour of Fenway Park!</p>
-              </div>
-            </Ttd>
-            <Ttd>
-              <div className="ttd__overlay">
-                <h3>Fenway Park</h3>
-                <p>4 Yawkey Way<br />
-                Boston, MA 02215</p>
-                <p>Take a tour of Fenway Park!</p>
+                <h3>More things to do are on the way!</h3>
               </div>
             </Ttd>
           </ul>
