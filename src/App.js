@@ -3,6 +3,7 @@ import { Router, Route, browserHistory, IndexRoute, IndexLink, Link } from 'reac
 import basicModal from 'basicmodal';
 import logo from './logo.svg';
 import ProjectHeader from './components/ProjectHeader';
+import ProjectFooter from './components/ProjectFooter';
 import './styles/App.css';
 
 class App extends Component {
@@ -70,6 +71,7 @@ class App extends Component {
         <div className="content">
           {this.props.children}
         </div>
+        <ProjectFooter />
       </div>
     );
   }

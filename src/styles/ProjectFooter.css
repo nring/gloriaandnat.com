@@ -1,0 +1,19 @@
+.footer{
+  clear:both;
+  text-align:center;
+  padding:2rem 0 3rem;
+  margin:0 2rem;
+  border-top:1px solid #ededed;
+}
+.nav--footer a{
+  color:#999;
+  font-size:.85rem;
+  margin: 0 1rem;
+  text-decoration:none;
+}
+.nav--footer a.active{
+  text-decoration:underline;
+}
+.nav--footer a:hover{
+  color:#333;
+}
