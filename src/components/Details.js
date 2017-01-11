@@ -7,11 +7,12 @@ class Details extends Component {
   render() {
     return (
       <div className="contentWell">
-        <nav className="subnav">
+        {/*<nav className="subnav">
           <a href="#acc">Accomodations</a>
           <a href="#">Transportation</a>
           <a href="#">Things to Do</a>
         </nav>
+        */}
         <div id="#acc">
           <h1>Accomodations</h1>
 

@@ -31,15 +31,7 @@
   background-image:url(http://www.ballparksofbaseball.com/wp-content/uploads/2016/03/fenway_topv3.jpg);
 }
 
-.ttd{
-  display:flex;
-}
-.ttd li{
-  flex-basis: 33%;
-}
-
 .ttd li {
-  background-color:#ccc;
   color:#fff;
   text-align:center;
   position:relative;
@@ -73,7 +65,29 @@
   opacity:1;
 }
 
+
+/* Default styling */
+.ttd{
+}
+.ttd li{
+  float:left;
+  width:33.3333%;
+}
+
+@supports (display: flex) {
+  .ttd{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .ttd li{
+    float:none;
+  }
+}
+
+
 @supports (display: grid) {
+  /* Regular grid styling */
   .ttd {
     display:grid;
     grid-template-columns:.333333333fr .333333333fr .333333333fr;
