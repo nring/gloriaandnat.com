@@ -4,50 +4,43 @@ import basicModal from 'basicmodal';
 import logo from './logo.svg';
 import ProjectHeader from './components/ProjectHeader';
 import ProjectFooter from './components/ProjectFooter';
+import Modal from './components/Modal';
 import './styles/App.css';
 
 class App extends Component {
 
+  constructor(props) {
+    super(props);
+    this.state = {
+        isModalOpen: false
+    };
+  }
 
-  validatePassowrd = function(data) {
-    if (data.password !== '888') {
-        // Invalid password
-        //basicModal.error('password')
-        return false;
+  openModal() {
+    this.setState({ isModalOpen: true });
+    document.body.classList.add('has-modal');
+  }
+
+  closeModal() {
+    this.setState({ isModalOpen: false });
+    document.body.classList.remove('has-modal');
+  }
+
+  validatePassword = function(data) {
+    var input = document.getElementById('input-password').value;
+    input = input.trim().toLowerCase();
+    if (input !== '888') {
+        this.wrongPassword();
+    } else {
+      this.setPwdCookie();
+      this.closeModal();
     }
-
-    // Login valid
-    //basicModal.close()
-    this.setPwdCookie();
-    return true
   }
 
   checkPwCookie() {
     // If cookie has never been set, show modal
-    //if (document.cookie.indexOf("gnPwd") < 0) {
-      // basicModal.show({
-      //     body: `
-      //           <p>Please enter site password (we/'ll only make you do this once)!</p>
-      //           <input class="basicModal__text" type="text" name="password">
-      //           `,
-      //     class: basicModal.THEME.small,
-      //     closable: false,
-      //     buttons: {
-      //         cancel: {
-      //             class: basicModal.THEME.xclose,
-      //             fn: basicModal.close
-      //         },
-      //         action: {
-      //             title: 'Submit',
-      //             fn: this.validatePassowrd
-      //         }
-      //     }
-      // })
-    //}
-
-    var prompt = window.prompt("Please enter site password (we'll only make you do this once)!")
-    if (prompt !== '888') {
-      browserHistory.push('/noPassword');
+    if (document.cookie.indexOf("gnPwd") < 0) {
+      this.openModal();
     }
   }
 
@@ -60,6 +53,10 @@ class App extends Component {
     document.cookie = "gnPwd=yes; expires=" + expiry.toGMTString();
   }
 
+  wrongPassword() {
+    browserHistory.push('/noPassword')
+  }
+
   componentDidMount() {
     this.checkPwCookie();
   }
@@ -68,6 +65,13 @@ class App extends Component {
     return (
       <div className="App">
         <ProjectHeader />
+        <Modal isOpen={this.state.isModalOpen}
+               transitionName="modal-anim">
+          <h2>Please enter password</h2>
+          <input type="text" id="input-password" />
+          <button onClick={this.validatePassword.bind(this)}>Submit</button>
+          <a onClick={this.wrongPassword.bind(this)}>Cancel</a>
+        </Modal>
         <div className="content">
           {this.props.children}
         </div>

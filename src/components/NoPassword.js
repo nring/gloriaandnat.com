@@ -6,7 +6,7 @@ class NoPassword extends Component {
     return (
       <div className="noPassword">
         <h1>Sorry, wrong password!</h1>
-        <p>You should be able to find it on your Save the Date or Invitation</p>
+        <p>You should be able to find it on your Save the Date</p>
       </div>
     )
   }
