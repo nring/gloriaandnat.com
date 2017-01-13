@@ -103,10 +103,8 @@ class Details extends Component {
                 <p>The O's are in town all weekend (we didn't plan that)! Sunday at 1:35 might be your best bet.</p>
               </div>
             </Ttd>
-            <Ttd>
-              <div className="ttd__overlay">
-                <h3>More things to do are on the way!</h3>
-              </div>
+            <Ttd className="ttd--comingSoon">
+              <h3>More things to do are on the way!</h3>
             </Ttd>
           </ul>
         </div>
