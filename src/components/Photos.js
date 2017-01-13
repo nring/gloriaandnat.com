@@ -202,24 +202,6 @@ const IMAGES = [
     }
   },
   {
-    src: i10t,
-    width:720,
-    height:720,
-    aspectRatio: 1,
-    lightboxImage: {
-      src: i10
-    }
-  },
-  {
-    src: i10t,
-    width:720,
-    height:720,
-    aspectRatio: 1,
-    lightboxImage: {
-      src: i10
-    }
-  },
-  {
     src: bamboot,
     width:720,
     height:720,
