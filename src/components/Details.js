@@ -52,6 +52,7 @@ class Details extends Component {
             <div className="card__block--deets">
               <p className="card-text">We have 20 rooms blocked off for Friday and Saturday for $219/night. Please book your room by calling Marriott (617-494-6600) and telling them you are part of the Mak/Ring Wedding. Rooms are on a first-come first-booked basis, and must be booked by August 4, 2017.</p>
               <p className="card-text"><small className="text-muted">*NOTE that this is different than the Marriott Residences.</small></p>
+              <p className="card-text">Please call the hotel directly for other discounted rates, including any advanced purchase rates that it may have (these may offer you a better rate than our room blocks).</p>
             </div>
           </div>
           <div className="card">
@@ -62,6 +63,7 @@ class Details extends Component {
             </div>
             <div className="card__block--deets">
               <p className="card-text">We have 20 studio rooms blocked off for Friday and Saturday for $219/night. Please book your room by calling Marriott (617-349-0700) and telling them you are part of the Mak/Ring Wedding. Rooms are on a first-come first-booked basis, and must be booked by July 28, 2017.</p>
+              <p className="card-text">Please call the hotel directly for other discounted rates, including any advanced purchase rates that it may have (these may offer you a better rate than our room blocks).</p>
             </div>
           </div>
           <div className="card">
