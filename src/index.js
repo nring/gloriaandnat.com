@@ -4,6 +4,7 @@ import { Router, Route, browserHistory, IndexRoute, IndexLink, Link } from 'reac
 import App from './App';
 import Home from './components/Home';
 import Details from './components/Details';
+import Faq from './components/Faq';
 import Photos from './components/Photos';
 import Registry from './components/Registry';
 import Rsvp from './components/Rsvp';
@@ -15,6 +16,7 @@ ReactDOM.render(
     <Route path="/" component={App}>
       <IndexRoute component={Home} />
       <Route path="details" component={Details} />
+      <Route path="FAQ" component={Faq} />
       <Route path="photos" component={Photos} />
       <Route path="registry" component={Registry} />
       <Route path="rsvp" component={Rsvp} />

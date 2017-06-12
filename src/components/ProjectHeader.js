@@ -8,9 +8,9 @@ class ProjectHeader extends Component {
     return (
       <header className="header">
         <nav className="nav">
+          <IndexLink className="logo" activeClassName="active" to='/'><img src={logo} alt="Nat & Gloria Home" /></IndexLink>
           <Link activeClassName="active" to='/details'>Details</Link>
           <Link activeClassName="active" to='/photos'>Photos</Link>
-          <IndexLink className="logo" activeClassName="active" to='/'><img src={logo} alt="Nat & Gloria Home" /></IndexLink>
           <Link activeClassName="active" to='/registry'>Registry</Link>
           <Link activeClassName="active" to='/rsvp'>RSVP</Link>
         </nav>
