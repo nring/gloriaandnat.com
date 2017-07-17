@@ -11,6 +11,7 @@ class ProjectHeader extends Component {
           <IndexLink className="logo" activeClassName="active" to='/'><img src={logo} alt="Nat & Gloria Home" /></IndexLink>
           <Link activeClassName="active" to='/details'>Details</Link>
           <Link activeClassName="active" to='/photos'>Photos</Link>
+          <Link activeClassName="active" to='/faq'>FAQ</Link>
           <Link activeClassName="active" to='/registry'>Registry</Link>
           <Link activeClassName="active" to='/rsvp'>RSVP</Link>
         </nav>

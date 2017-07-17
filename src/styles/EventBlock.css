@@ -5,12 +5,17 @@
   flex-flow: row wrap;
 }
 .EventBlock{
-  display:flex;
-  width:33%;
-  flex-direction:column;
-  float:left;
-  padding:2%;
-  flex: 1 0 0;
+  display: block;
+    padding:2%;
+}
+@media screen and (min-width: 40rem) {
+  .EventBlock{
+    display:flex;
+    width:33%;
+    flex-direction:column;
+    float:left;
+    flex: 1 0 0;
+  }
 }
 
 .EventBlock__image{
