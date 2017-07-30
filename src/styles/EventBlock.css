@@ -6,7 +6,7 @@
 }
 .EventBlock{
   display: block;
-    padding:2%;
+  padding:2%;
 }
 @media screen and (min-width: 40rem) {
   .EventBlock{

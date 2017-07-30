@@ -115,6 +115,26 @@ class Details extends Component {
               <p>The O's are in town all weekend (we didn't plan that)! Sunday at 1:35 might be your best bet.</p>
             </div>
           </Ttd>
+          <Ttd className="ttd--mos">
+            <div className="ttd__overlay">
+              <h3>Museum of Science</h3>
+              <p>1 Science Park<br />
+              Boston, MA 02114</p>
+              <p>The hotels are a short walk away from the Museum of Science. Check out their website for current exhibits: <a href="https://www.mos.org/">https://www.mos.org/</a>.</p>
+            </div>
+          </Ttd>
+          <Ttd className="ttd--map">
+            <div className="ttd__overlay">
+              <h3>Map</h3>
+              <p>Check out our <a href="https://drive.google.com/open?id=1b2qByCNWzvTxhOPlyLXHbWByVxA&usp=sharing">map</a> for suggestions around the neighborhood and directions to wedding-related spots.</p>
+            </div>
+          </Ttd>
+          <Ttd className="ttd--run">
+            <div className="ttd__overlay">
+              <h3>Run or Walk Around the Charles</h3>
+              <p>Get great views of the Boston skyline, Cambridge, and MIT by running along the Charles. There are options for a <a href="http://www.mapmyrun.com/routes/view/1703393081">3 mile route</a>, a <a href="http://www.mapmyrun.com/routes/view/1703389352">5K route</a>, and a <a href="http://www.mapmyrun.com/routes/view/1703395535">4.25 mile route</a>.</p>
+            </div>
+          </Ttd>
           <Ttd className="ttd--comingSoon">
             <h3>More things to do are on the way!</h3>
           </Ttd>
